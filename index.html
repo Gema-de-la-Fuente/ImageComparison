@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Gema de la Fuente Romero y Álvar Ruiz Tavira" />
+        <title>Imágenes para la Web</title>
+        <link rel="stylesheet" type="text/css" href="css/style_images.css" />
+        <script type="application/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Comparación de Formatos de Imagen y Vectorización de Iconos</h1>
+            <h3>Gema de la Fuente Romero y Álvar Ruiz Tavira</h3>
+            <nav>
+                <div><a href="#edicion">Comparación de Formatos</a></div>
+                <div><a href="#vectorizacion">Vectorización de Iconos</a></div>
+            </nav>
+        </header>
+        <main>
+            <section id="edicion">
+                <header>
+                    <h2>Comparación de Formatos de Imagen</h2>
+                </header>
+                <article>
+                    <p>Los formatos de imagen digital proveen diferentes métodos de compresión, cuya finalidad es optimizar el coste de almacenamiento y de transmisión de la imagen. Éstos métodos de compresión pueden ser <b>con pérdida</b> o <b>sin pérdida</b> de información de la imagen, y dependiendo de las características de la imagen que se quiera almacenar, resultará más o menos eficiente el uso de un determinado formato para su almacenamiento y transmisión en la red.</p>
+                    <p>Los <b>formatos de imagen con pérdidas</b> se dicen así porque no almacenan toda la información que contiene la imagen, sino que descartan información considerada como prescindible para su visualización. A medida que se comprime la imagen se reduce su tamaño pero también su calidad. Los métodos de compresión con pérdidas se basan en que el ojo humano no es capaz de percibir toda la información contenida en una imagen de alta calidad, lo que los hace idóneos para reproducir fotografías o imágenes con alto nivel de detalle, ya que permiten disminuir hasta cierto punto la calidad de la imagen sin que lleguemos a percibir la diferencia.</p>
+                        
+                    <!--<p>La manera más eficiente de insertar fotografías en una página web es mediante un <b>formato con pérdidas</b>. Estos formatos se dicen con pérdidas ya que no almacenan toda la información contiene la imagen, sino que descartan información considerada como prescindible para su visualización (como metadatos y otas información), lo que los hace idóneos para reproducir fotografías o imágenes con alto nivel de detalle. Estos formatos admiten</p>-->
+                    
+                    <p>En este artículo se comparan tres formatos de imagen con pérdidas: JPEG, JPEG XR y WEBP, para lo cual se ha convertido una imagen original en formato PNG a cada uno de los tres formatos anteriores con diferentes niveles de compresión: 100%, 75%, 50%, 25% y 1%. Para la conversión de la imagen original a los formatos JPEG y JPEG XR se ha utilizado la herramienta freeware XnView, mientras que para la conversión al formato WEBP se ha realizado mediante el conversor en línea <a href="https://webp-converter.com/" target="_blank">Online WebP Converter</a>.</p>
+                    
+                </article>
+                <article>
+                    <h3>Imagen Original</h3>
+                    <div class="png_original">
+                        <div class="image">
+                            <img src="images/chico.png" />
+                        </div>
+                        <p>Formato: PNG (.png) | Tamaño: 4794 KB | Dimensiones: 1200 x 1800 píxeles</p>
+                    </div>
+                </article>
+                <article id="formatos">
+                    <h3>Formato JPEG (.jpg)</h3>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG/chico_jpg_100.jpg" />
+                            <p>Calidad 100</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jpg_100">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG/chico_jpg_75.jpg" />
+                            <p>Calidad 75</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jpg_75">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG/chico_jpg_50.jpg" />
+                            <p>Calidad 50</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jpg_50">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG/chico_jpg_25.jpg" />
+                            <p>Calidad 25</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jpg_25">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG/chico_jpg_1.jpg" />
+                            <p>Calidad 1</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jpg_1">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Formato JPEG XR (.jxr)</h3>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG-XR/chico_jxr_100.jxr" />
+                            <p>Calidad 100</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jxr_100">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG-XR/chico_jxr_75.jxr" />
+                            <p>Calidad 75</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jxr_100">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG-XR/chico_jxr_50.jxr" />
+                            <p>Calidad 50</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jxr_50">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG-XR/chico_jxr_25.jxr" />
+                            <p>Calidad 25</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jxr_25">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/JPEG-XR/chico_jxr_1.jxr" />
+                            <p>Calidad 1</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_jxr_1">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Formato WEBP (.webp)</h3>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/WEBP/chico_webp_100.webp" />
+                            <p>Calidad 100</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_webp_100">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/WEBP/chico_webp_75.webp" />
+                            <p>Calidad 75</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_webp_75">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/WEBP/chico_webp_50.webp" />
+                            <p>Calidad 50</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_webp_50">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/WEBP/chico_webp_25.webp" />
+                            <p>Calidad 25</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_webp_25">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/WEBP/chico_webp_1.webp" />
+                            <p>Calidad 1</p>
+                        </div>
+                        <div>
+                            <div class="zoom zoom_webp_1">
+                            </div>
+                            <p>Zoom 300%</p>
+                        </div>
+                    </div>
+                    
+                </article>
+                <article>
+                    <h3>Conclusión</h3>
+                    <p>En la siguiente tabla comparativa se muestran los tamaños de la imagen en los diferentes formatos y calidades analizados:</p>
+                    <table>
+                        <caption>Tamaño (KB)</caption>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <th colspan="5">Calidad</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <th>100</th>
+                                <th>75</th>
+                                <th>50</th>
+                                <th>25</th>
+                                <th>1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="3">Formatos</th>
+                                <th>JPEG (.jpg)</th>
+                                <td>1396 KB</td>
+                                <td>285 KB</td>
+                                <td>167 KB</td>
+                                <td>105 KB</td>
+                                <td>43 KB</td>
+                            </tr>
+                            <tr>
+                                <th>JPEG XR (.jxr)</th>
+                                <td>2442 KB</td>
+                                <td>493 KB</td>
+                                <td>277 KB</td>
+                                <td>194 KB</td>
+                                <td>145 KB</td>
+                            </tr>
+                            <tr>
+                                <th>WEBP (.webp)</th>
+                                <td>799 KB</td>
+                                <td>143 KB</td>
+                                <td>91 KB</td>
+                                <td>53 KB</td>
+                                <td>21 KB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Se puede observar que la disminución de tamaño en función de la reducción de la calidad no sigue una relación lineal sino logarítmica, de modo que una reducción de calidad desde un 100% (imagen no comprimida) a un 75% implica una pequeña pérdida de calidad pero una gran reducción del tamaño de la imagen, mientras que si continuamos comprimiendo la imagen, la pérdida de calidad se acusa pero la reducción del tamaño del fichero no es tan notoria.</p>
+                    <p>Tanto los formatos JPEG XR como WEBP resuelven mejor que JPEG las pérdidas de calidad ante niveles altos de compresión. Por su parte, el formato JPEG XR es el que genera ficheros de mayor tamaño, pero es el que mejor reproduce la imagen a niveles altos de compresión. Por otra parte, WEBP es el que genera archivos de tamaño menor y resuelve la pérdida de calidad ante niveles altos de compresión mejor JPEG pero no tan bien como JPEG XR. Sin embargo, los formatos JPEG XR y WEBP presentan a día de hoy problemas de compatibilidad entre navegadores, siendo JPEG XR soportado de forma nativa sólo en Edge y WEBP sólo en Chrome.</p>
+                    <p>Por tanto, el formato de imagen que elegimos para <a href="https://alvar-ruiz.github.io/Escaparate/" target="_blank">nuestro sitio web</a> es JPEG, ya que es soportado universalmente por todos los navegadores, y consideramos que la calidad óptima es de 50, ya que a la escala a la que se visualizan la imágenes en nuestro sitio web, la pérdida de calidad es prácticamente imperceptible mientras que la reducción de tamaño considerable. Obviando el problema de la compatibilidad entre navegadores, elegiríamos el formato WEBP con una calidad también de 50, ya que del mismo modo la pérdida de calidad es inapreciable mientras que la reducción del tamaño del fichero es aún mayor.</p>
+                </article>
+            </section>
+            <section id="vectorizacion">
+                <header>
+                    <h2>Vectorización de Iconos</h2>
+                </header>
+                <article>
+                    <p>El objetivo es comparar el rendimiento de los ambos formatos, .svgz y .png, a diferentes tamaños. Partimos de un icono en formato PNG:</p>
+                    <h3>Imagen Original</h3>
+                    <div class="images">
+                        <div class="icon">
+                            <img src="icons/shopping-cart-black-shape.png" />
+                            <p>Formato: PNG (.png) | Tamaño: 6,36 KB | Dimensiones: 512 x 512 píxeles</p>
+                        </div>
+                    </div>
+                    <p>La vectorización del icono se ha llevado a cabo con la herramienta <a href="https://inkscape.org/es/" target="_blank">Inkscape</a>. Para optimizar el tamaño del archivo SVG (.svg) resultante, éste se ha comprimido a un formato GZip (.gz), para después transformarlo a extensión SVGZ (.svgz). Paralelamente, se ha transformado el archivo original en formato PNG en dos tamaños, 256 x 256 píxeles y 30 x 30 píxeles, optimizándolo en ambos casos quitando metadatos, reduciendo la paleta de color a 8 colores y comprimiendo el archivo al máximo (9).</p>
+                    <div class="images">
+                        <div>
+                            <div class="icon_small">
+                                <img src="icons/shopping-cart.svgz" />
+                            </div>
+                            <p>Formato SVGZ (dimensionado por CSS a 30 x 30 px)</p>
+                        </div>
+                        <div class="icon">
+                            <img src="icons/shopping-cart-black-shape_small.png" />
+                            <p>Formato PNG 30 x 30 px</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div>
+                            <div class="icon_medium">
+                                <img src="icons/shopping-cart.svgz" />
+                            </div>
+                            <p>Formato SVGZ (dimensionado por CSS a 256 x 256 px)</p>
+                        </div>
+                        <div class="icon">
+                            <img src="icons/shopping-cart-black-shape_optimized.png" />
+                            <p>Formato PNG 256 x 256 px</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h3>Conclusiones</h3>
+                    <p>En la siguiente tabla se comparan los tamaños de la imagen en formato SVGZ con los de las imágenes PNG en las diferentes dimensiones:</p>
+                    <table>
+                        <tr>
+                            <th>Formato</th>
+                            <th>Dimensiones</th>
+                            <th>Tamaño</th>
+                        </tr>
+                        <tr>
+                            <td>SVGZ</td>
+                            <td> - </td>
+                            <td>15,8 KB</td>
+                        </tr>
+                        <tr>
+                            <td>PNG</td>
+                            <td>30 x 30 px</td>
+                            <td>298 B</td>
+                        </tr>
+                        <tr>
+                            <td>PNG</td>
+                            <td>256 x 256 px</td>
+                            <td>1,36 KB</td>
+                        </tr>
+                    </table>
+                </article>
+                <p>Dada la sencillez gráfica del icono, la optimización en formato PNG resulta más eficiente en las diferentes dimensiones, aún habiendo optimizado el formato SVG a SVGZ.</p>
+                <p>Valorando los resultados, consideramos que lo más eficiente es utilizar iconos en formato PNG en <a href="https://alvar-ruiz.github.io/Escaparate/" target="_blank">nuestro sitio web</a> dado el pequeño tamaño en el que se muestran éstos.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Gema de la Fuente Romero y Álvar Ruiz Tavira - 2017</p>
+        </footer>
+    </body>
+</html>

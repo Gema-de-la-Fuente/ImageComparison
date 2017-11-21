@@ -1,0 +1,150 @@
+// Fuentes
+
+@font-face
+    font-family: Nunito
+    src: url("../fonts/Nunito/Nunito-Regular.ttf")
+
+
+// Variables
+
+$font-text: Nunito, sans-serif
+$lista-formatos: jpg jxr webp
+$lista-calidades: 100 75 50 25 1
+$color_resaltado_1: lightblue
+$color_resaltado_2: aliceblue
+
+
+// Mixins
+
+=flexbox($horizontal, $vertical)
+    display: flex
+    justify-content: $horizontal
+    align-items: $vertical
+    
+=zoom
+    @each $formato in $lista-formatos
+        @each $calidad in $lista-calidades
+            .zoom_#{$formato}_#{$calidad}
+                background-image: url("../images/zoom/zoom_300_#{$formato}_#{$calidad}.JPG")
+ 
+
+// General
+
+*
+    //border: 1px solid black
+    font-family: $font-text
+
+a
+    text-decoration: none
+    color: skyblue
+
+
+// Header
+
+body
+    width: 80%
+    > header
+    margin: 1em auto
+
+header
+    text-align: center    
+    h1
+        background-color: $color_resaltado_2
+    
+nav
+    +flexbox(center, center)
+    margin: 3em auto
+    div
+        margin: 0.5em
+        padding: 0.5em 0
+    a
+        font-weight: bold
+        border: 2px solid $color_resaltado_1
+        background-color: $color_resaltado_2
+        margin: 0
+        padding: 0.5em
+        
+.fijado
+    position: fixed
+    top: 0
+
+    
+// Main
+
+main
+    margin: 0 auto
+    h3, h2
+        background-color: $color_resaltado_2
+    h3
+        margin-top: 3em
+    
+p
+    text-align: justify
+    
+.png_original
+    .image
+        margin: 0 auto
+    p
+        text-align: center
+
+.images
+    +flexbox(space-around, center)
+    width: 80%
+    margin: 0 auto
+    margin-top: 2em
+    p
+        text-align: center
+        
+.image, .icon_small, .icon_medium
+    img
+        width: 100%
+    
+.image
+    width: 40%
+        
+.zoom
+    width: 400px
+    height: 400px
+    background-size: cover
+        
++zoom
+
+.icon_small, .icon_medium
+    margin: 0 auto
+
+.icon_small
+    width: 30px
+    height: auto
+    
+.icon_medium
+    width: 256px
+    height: auto
+    img
+        margin: 1em auto
+
+.icon
+    text-align: center
+    
+caption
+    margin-bottom: 1em
+    font-weigth: bold
+    
+table
+    margin: 0 auto
+    border-collapse: collapse
+    
+td
+    padding: 0.5em
+    
+th
+    background-color: $color_resaltado_2
+    
+
+// Footer
+
+footer
+    margin-top: 5em
+    background-color: $color_resaltado_2
+    p
+        text-align: center
+        font-weight: bold
